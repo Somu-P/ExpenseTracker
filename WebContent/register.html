@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function validate(){
+            var p=document.f.password.value;
+            if(p.length<6){
+                alert("Password must be at least 6 characters long.");
+             return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <form name="f" action="register" method="post" onsubmit="return validate()">
+        <h2>Register</h2>
+        <input type="text" name="name" placeholder="Enter name"> <br>
+        <input type="text" name="email" placeholder="Enter email"> <br>
+        <input type="password" name="password" placeholder="Enter password"> <br>
+        <input type="submit" value="Register">
+        <a href="login.html">Already User?Login</a>
+    </form>
+</body>
+</html>

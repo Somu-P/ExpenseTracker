@@ -1,0 +1,13 @@
+# Local secrets
+WebContent/WEB-INF/.env
+.env
+
+# Java build output
+*.class
+
+# IDE files
+.vscode/
+
+# OS files
+Thumbs.db
+.DS_Store
